@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+
+    <!-- adding header partials -->
+    {{>header}}
+
+
+    <div class="container-fluid bg-secondary d-block h-100 p-5">
+        <div class="container-fluid px-5">
+            <form class="form-inline my-2 my-lg-0" id="weatherForm">
+                <input class="form-control mr-sm-2 w-50" id="location" type="search" placeholder="Enter Location">
+                <button class="btn btn-success text-white my-2 my-sm-0" type="submit">search weather</button>
+            </form>
+        </div>
+
+        <div class="container-fluid px-5 my-3">
+            <div class="alert alert-danger text-left mb-0" id="weatherError" role="alert"></div>
+            <div class="alert alert-primary text-left mb-0" id="weatherResponse" role="alert"></div>
+            <div class="bg-light p-5">
+                <h1 class="text-primary">{{heading}}</h1>
+                <p class="text-sm text-danger">Written By : {{author}}</p>
+                <p class="text-success text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                    culpa
+                    assumenda
+                    recusandae obcaecati nobis modi numquam, commodi atque. Facere vel quasi possimus aliquid minus odit
+                    modi aspernatur esse magni, saepe eaque cupiditate molestias facilis nemo. Quos alias nulla quae
+                    dicta,
+                    perferendis maiores consectetur architecto nesciunt corrupti vel error neque in delectus magni
+                    doloribus
+                    vitae accusamus quisquam ipsum modi debitis incidunt. Vero facilis voluptatibus maxime, nisi quidem
+                    fugiat fugit reprehenderit similique ipsam ea incidunt officia eaque placeat amet itaque dolores
+                    modi ex
+                    sapiente dignissimos magni eligendi nostrum inventore. Repellendus nihil nobis, optio, fugit ad
+                    laboriosam excepturi sunt voluptatum, molestias esse odio!</p>
+            </div>
+
+        </div>
+
+        <!-- adding footer partials-->
+        {{>footer}}
+
+
+        <script src="js/main.js"></script>
+</body>
+
+</html>
