@@ -19,16 +19,26 @@
     <div class="container-fluid bg-secondary d-block h-100 p-5">
         <div class="bg-light p-5 m-5">
             <h1 class="text-primary">{{heading}}</h1>
-            <p class="text-sm text-danger">Written By : {{author}}</p>
-            <p class="text-success text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa
-                assumenda
-                recusandae obcaecati nobis modi numquam, commodi atque. Facere vel quasi possimus aliquid minus odit
-                modi aspernatur esse magni, saepe eaque cupiditate molestias facilis nemo. Quos alias nulla quae dicta,
-                perferendis maiores consectetur architecto nesciunt corrupti vel error neque in delectus magni doloribus
-                vitae accusamus quisquam ipsum modi debitis incidunt. Vero facilis voluptatibus maxime, nisi quidem
-                fugiat fugit reprehenderit similique ipsam ea incidunt officia eaque placeat amet itaque dolores modi ex
-                sapiente dignissimos magni eligendi nostrum inventore. Repellendus nihil nobis, optio, fugit ad
-                laboriosam excepturi sunt voluptatum, molestias esse odio!</p>
+
+            <div class="row">
+                <div class="col-md-9">
+                    <h5 class="text-danger">Developer : {{author}}</h5>
+                    <p class="text-secondary">Hii there!!</p>
+                    <p class="text-secondary">This is my first node app on heroku. This is weather application which
+                        takes information from <kbd>mapbox.net</kbd> and <kbd>darksky.net</kbd> It takes address from
+                        user
+                        which is converted in to <kbd>latitude</kbd> and <kbd>longitude</kbd> by <code>mapbox.net</code>
+                        and passed as input to the <code>darksky.net</code> which returns current weather
+                        at that
+                        location.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <div class="img">
+                        <img src="img/sk_zoo.jpg" class="img-fluid img-thumbnail" alt="" style="width:200px">
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
